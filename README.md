@@ -10,7 +10,7 @@
 git clone https://github.com/cydai999/NeuralNetwork-PJ1
 ```
 
-之后从https://drive.google.com/drive/folders/1GdLbs1mjBJ2-k6Kd5bLahiI7nGf_UP-v?usp=drive_link下载模型权重与数据集文件夹，解压缩后将其放在项目根目录下。相对路径位置应如下所示：
+之后从 https://drive.google.com/drive/folders/1GdLbs1mjBJ2-k6Kd5bLahiI7nGf_UP-v?usp=drive_link 下载模型权重与数据集文件夹，解压缩后将其放在项目根目录下。相对路径位置应如下所示：
 
 ```plaintext
 PJ1
