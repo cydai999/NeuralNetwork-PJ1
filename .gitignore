@@ -1,0 +1,9 @@
+.idea/
+dataset/
+venv/
+__pycache__/
+*.pyc
+*.env
+*.log
+best_models/
+saved_models/
