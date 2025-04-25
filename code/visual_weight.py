@@ -24,7 +24,7 @@ def visual_kernel(W, name):
 # load model
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--model_path', '-p', type=str, default='./saved_models/CNN/best_model/models/best_model.pickle')
+parser.add_argument('--model_path', '-p', type=str, default='./saved_models/MLP/best_model/models/best_model.pickle')
 args = parser.parse_args()
 
 model_path = args.model_path

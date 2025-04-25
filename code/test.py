@@ -1,5 +1,4 @@
-import os
-import pickle
+import re
 from struct import unpack
 
 import numpy as np
@@ -36,7 +35,15 @@ args = parser.parse_args()
 
 model_path = args.model_path
 
-model = nn.models.MLPModel(save_dir=model_path)
+if re.match('^./saved_models/MLP', model_path) is not None:
+    model = nn.models.MLPModel(save_dir=model_path)
+elif re.match('^./saved_models/CNN', model_path) is not None:
+    model = nn.models.CNN(save_dir=model_path)
+    img_len_size = int(np.sqrt(test_data.shape[-1]))
+    test_data = test_data.reshape(-1, 1, img_len_size, img_len_size)
+    test_set = [test_data, test_labs]
+else:
+    raise ValueError('model_path leads to neither MLP or CNN')
 
 # test
 loss_fn = nn.loss_fn.CrossEntropyLoss(model)

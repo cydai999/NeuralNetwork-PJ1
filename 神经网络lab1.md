@@ -12,7 +12,7 @@
 
 模型部分（`mynn`）包含网络层（`layers.py`），损失函数（`loss_fn`），优化器（`optimizers` ），学习率调整器（`lr_scheduler`），评价标准（`metric.py`），模型架构（`models.py`）和运行器（`runner.py`）这些基本组件。
 
-训练部分（`train.py`）支持在MNIST数据集上进行训练，训练时以5：1划分训练集（train set）与验证集（valid set）,训练完毕后在测试集（test set）上计算精度，并支持保存每个epoch的模型及最优模型的参数、模型架构及超参数、损失/精度-迭代次数图像及测试结果。
+训练部分（`train.py`）支持在MNIST数据集上进行训练，训练时以5：1划分训练集（train set）与验证集（valid set）,训练完毕后在测试集（test set）上计算精度，并支持保存每个epoch的模型及最优模型的参数、模型架构及超参数、损失/精度-迭代次数图像及测试结果。注：若想训练卷积神经网络需要使用`train_CNN.py`。
 
 测试部分（`test.py`）支持读取保存的模型参数，并在MNIST的测试集上进行测试。
 
@@ -20,9 +20,9 @@
 
 本报告主要介绍了模型架构，数据集，实验过程，模型优化等内容。其中，模型优化部分对要求1.2中的七个问题逐一作出了回应。
 
-本项目的代码见
+本项目的代码见[cydai999/NeuralNetwork-PJ1](https://github.com/cydai999/NeuralNetwork-PJ1)
 
-本项目的模型参数和所用数据集（MNIST）可以在下载。
+本项目的模型参数和所用数据集（MNIST）可以在https://drive.google.com/drive/folders/1GdLbs1mjBJ2-k6Kd5bLahiI7nGf_UP-v?usp=drive_link下载。
 
 
 
